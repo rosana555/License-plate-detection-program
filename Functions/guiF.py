@@ -217,6 +217,7 @@ def displayRecognizedPlate(plate):
         if event == gui.WINDOW_CLOSED:
             break
         elif event == "Yes":
+            window.hide()
             displayEditPlateQuestion(plate)
             break
         elif event =="No":
