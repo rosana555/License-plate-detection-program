@@ -96,6 +96,8 @@ def detectPlates(img):
         cv.rectangle(img, pt1=(x + 10, y + 15), pt2=(x + width - 10, y + height - 10), color=(30, 180, 45), thickness=2)
         cv.putText(img, text=str(text), org=(x + int(width / 5), y), fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=1,
                    color=(0, 0, 0), thickness=2)
+        cv.putText(img, text="'q' za izhod", org=(50,50), fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=0.8,
+                   color=(0, 0, 255), thickness=1)
     return img, textRecognized
 
 
